@@ -8,11 +8,11 @@ namespace espacio.Tarea
         private string? descripcion;
         private int duracion;
 
-        public Tarea()
+        public Tarea(int pr1, string pr2, int pr3)
         {
-            this.tareaId = TareaId;
-            this.descripcion = Descripcion;
-            this.duracion = Duracion;
+            this.tareaId = pr1;
+            this.descripcion = pr2;
+            this.duracion = pr3;
         }
 
         public int TareaId { get => tareaId; set => tareaId = value; }
@@ -27,9 +27,9 @@ namespace espacio.Tarea
                     duracion = value;
                 }
             } 
-         } // Validar que esté entre 10 y 100
         
     }
+         } // Validar que esté entre 10 y 100
     
         // Puedes añadir un constructor y métodos auxiliares si lo consideras necesario
 
